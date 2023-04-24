@@ -9,6 +9,9 @@ const port = 3000;
 
 /* express 미들웨어 설정 */
 
+// 정적파일 제공
+app.use(express.static(front));
+
 // cors 설정
 // cors 허가된 것만 도메인을 쓰게 하는 것인데, 아래 코드는 보안설정을 느슨하게 해준 것이다.
 app.use(cors());
